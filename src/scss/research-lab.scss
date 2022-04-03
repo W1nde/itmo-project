@@ -1,0 +1,340 @@
+.research-lab {
+  padding: 80px 0;
+  background-color: #E0F0FF;
+  @media (max-width:750px) {
+    padding: 40px 0;
+  }
+
+  &__container {}
+
+  &__title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 68px;
+    color: #000D26;
+    @media (max-width:768px) {
+      font-size: 24px;
+      line-height: 33px;
+    }
+    @media (max-width:420px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__about {
+    display: grid;
+    margin: 60px 0 80px 0;
+    grid-template-areas:
+      'subtitle img'
+      'caption img';
+    @media (max-width:750px) {
+      grid-template-areas: 
+      'img'
+      'subtitle'
+      'caption';
+      margin: 20px auto 30px;
+      justify-content: space-around;
+    }
+  }
+
+  &__subtitle {
+    grid-area: subtitle;
+    margin: 0 0 20px 0;
+    max-width: 540px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000D26;
+    @media (max-width:768px) {
+      max-width: 330px;
+      font-size: 14px;
+      line-height: 20px;
+      padding-left: 24px;
+    }
+    @media (max-width: 750px) {
+      padding-left: 0;
+    }
+    @media (max-width:420px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__caption {
+    position: relative;
+    grid-area: caption;
+    max-width: 540px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000D26;
+    @media (max-width:768px) {
+      max-width: 330px;
+      font-size: 14px;
+      line-height: 20px;
+      padding-left: 24px;
+    }
+    @media (max-width: 750px) {
+      padding-left: 0;
+    }
+    @media (max-width:420px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__pic {
+    position: absolute;
+    top: 0;
+    left: -36px;
+    background-image: url(../img/research-lab/Vector.svg);
+    width: 24px;
+    height: 23px;
+    background-size: cover;
+    @media (max-width:1150px) {
+      display: none;
+    }
+  }
+
+  &__image {
+    display: flex;
+    column-gap: 12px;
+    grid-area: img;
+    margin: 0 0 0 30px;
+    max-width: 540px;
+    @media (max-width: 1150px) {
+      display: flex;
+    }
+    @media (max-width: 750px)  {
+      margin: 0 0 20px 0;
+    }
+    @media (max-width: 420px)  {
+      max-width: 288px;
+    }
+  }
+
+  #imgfon-1 {
+    @media (max-width:1150px) {
+      display: none;
+    }
+  }
+
+  #imgfon-2 {
+    @media (max-width:1150px) {
+      display: none;
+    }
+  }
+
+  #imgfon-3 {
+    display: none;
+    @media (max-width:1150px) {
+      display: block;
+      width: 330px;
+      height: 240px;
+    }
+    @media (max-width:420px) {
+      display: block;
+      width: 288px;
+    }
+  }
+
+  &__image-item {
+    height: 264px;
+    width: 276px;
+    @media (max-width: 1150px) {
+      object-fit: cover;
+      width: 330px;
+      height: 240px;
+    }
+  }
+
+  &__cards-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    @media (max-width: 750px) {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    @media (max-width: 495px) {
+      justify-content: space-evenly;
+    }
+  }
+
+  &__card-item {
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    max-width: 255px;
+    box-shadow: 0px 4px 20px rgba(1, 54, 157, 0.15);
+    @media (max-width: 1150px) {
+      max-width: 150px;
+    }
+    @media (max-width:750px) {
+      margin: 8px 0 0 0;
+    }
+    @media (max-width:420px) {
+      max-width: 140px;
+    }
+  }
+
+  &__card-content {
+    box-sizing: content-box;
+    padding: 30px 20px 20px 20px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 10px;
+    max-width: 215px;
+    @media (max-width: 1150px) {
+      max-width: 127px;
+      padding: 12px;
+    }
+    @media (max-width:420px) {
+      max-width: 120px;
+      padding: 10px;
+    }
+  }
+
+  &__card-content:hover {
+    background: linear-gradient(180deg, #009FAC 0%, rgba(224, 240, 255, 0) 100%, rgba(0, 159, 172, 0) 100%);
+  }
+
+  &__card-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    @media (max-width: 1150px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    @media (max-width: 420px) {
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+
+  &__card-circle {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 50px auto;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    @media (max-width: 1150px) {
+      width: 41px;
+      height: 41px;
+      margin: 20px auto;
+    }
+  }
+
+  &__card-img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 34px;
+    height: 34px;
+    @media (max-width: 1150px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__card-text {
+    margin: 0 0 50px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    @media (max-width: 1150px) {
+      font-size: 10px;
+      line-height: 14px;
+      margin: 0 0 20px;
+    }
+    @media (max-width: 420px) {
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+
+  &__card-btn {
+    padding: 10px 69px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    background-color: transparent;
+    border: 1px solid #001337;
+    border-radius: 10px;
+    cursor: pointer;
+    @media (max-width: 1150px) {
+      padding: 9px 35px;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 14px;
+    }
+    @media (max-width: 420px) {
+      padding: 9px 32px;
+    }
+  }
+
+  &__card-background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 255px;
+    height: 427px;
+    border-radius: 10px;
+    @media (max-width: 1150px) {
+      width: 150px;
+      height: 247px;
+    }
+    @media (max-width: 420px) {
+      width: 140px;
+      height: 239px;
+    }
+  }
+
+  #card-1 {
+    background-image: url(../img/research-lab/card/card1.svg);
+  }
+
+  #back-1 {
+    background-image: url(../img/research-lab/card/Project1.png);
+  }
+
+  #card-2 {
+    background-image: url(../img/research-lab/card/card2.svg);
+  }
+
+  #back-2 {
+    background-image: url(../img/research-lab/card/Project2.png);
+  }
+
+  #card-3 {
+    background-image: url(../img/research-lab/card/card3.svg);
+  }
+
+  #back-3 {
+    background-image: url(../img/research-lab/card/Project3.png);
+  }
+
+  #card-4 {
+    background-image: url(../img/research-lab/card/card4.svg);
+  }
+
+  #back-4 {
+    background-image: url(../img/research-lab/card/Project4.png);
+  }
+}
