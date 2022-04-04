@@ -1,8 +1,11 @@
 @import 'normalize';
 @import 'fonts';
+@import 'about-us';
+@import 'research-lab';
 
 [class*="__container"] {
     margin: 0 auto;
     max-width: 1146px;
+    padding: 0 15px;
 }
 
