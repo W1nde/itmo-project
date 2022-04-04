@@ -1,0 +1,14 @@
+@import 'normalize';
+@import 'fonts';
+@import 'mix.scss';
+@import 'project';
+@import 'education';
+@import 'connection';
+@import 'footer';
+
+
+[class*="__container"] {
+    margin: 0 auto;
+    max-width: 1146px;
+    padding: 0px 15px;
+}
