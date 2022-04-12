@@ -172,6 +172,7 @@
     border-radius: 10px;
     max-width: 255px;
     box-shadow: 0px 4px 20px rgba(1, 54, 157, 0.15);
+    transition: transform .3s;
     @media (max-width: 1150px) {
       max-width: 150px;
     }
@@ -180,6 +181,12 @@
     }
     @media (max-width:420px) {
       max-width: 140px;
+    }
+  }
+
+  &__card-item:hover {
+    @media (min-width: 420px) {
+      transform: translateY(-20px);
     }
   }
 
@@ -200,7 +207,20 @@
   }
 
   &__card-content:hover {
-    background: linear-gradient(180deg, #009FAC 0%, rgba(224, 240, 255, 0) 100%, rgba(0, 159, 172, 0) 100%);
+    background: rgb(0%, 62%, 67%, .7);
+  }
+
+  &__card-content:hover &__card-title {
+    color: #fff;
+  }
+
+  &__card-content:hover &__card-text {
+    color: #fff;
+  }
+
+  &__card-content:hover &__card-btn {
+    color: #fff;
+    border: 1px solid #fff
   }
 
   &__card-title {
